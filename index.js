@@ -21,7 +21,7 @@ const menu = [
   { id: 6, name: "Whopper", price: 99, image: "Whopper.jpg" },
 ];
 
-app.get('/api/menu', (req, res) => res.json(menu));
+app.get('/apimenu/', (req, res) => res.json(menu));
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
